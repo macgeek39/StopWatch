@@ -21,7 +21,11 @@ function stop(){
 }
 
 function reset(){
-
+    clearInterval(timer);
+    let startTime = 0;
+    let elapsedTime = 0;
+    let isRunning = false;
+    display.textContent = "00:00:00:00";
 }
 
 function update(){
